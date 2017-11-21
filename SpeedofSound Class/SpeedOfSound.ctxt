@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=d
+comment0.target=SpeedOfSound(double)
+comment1.params=d
+comment1.target=void\ setDistance(double)
+comment2.params=
+comment2.target=double\ getDistance()
+comment3.params=
+comment3.target=double\ getTimeInAir()
+comment4.params=
+comment4.target=double\ getTimeInWater()
+comment5.params=
+comment5.target=double\ getTimeInSteel()
+numComments=6
