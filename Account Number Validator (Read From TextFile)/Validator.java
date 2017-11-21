@@ -1,6 +1,4 @@
 /**
- * Chapter 7
- * Programming Challenge 3: Charge Account Validation
  * The Validator class provides a method to 
  * validate account numbers.
  */
