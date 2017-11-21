@@ -1,0 +1,7 @@
+Hours             Distance Traveled
+------------------------------------
+  1                     5 MPH
+  2                     10 MPH
+  3                     15 MPH
+  4                     20 MPH
+  5                     25 MPH
