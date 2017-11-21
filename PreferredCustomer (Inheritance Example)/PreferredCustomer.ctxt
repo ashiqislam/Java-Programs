@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.params=name\ address\ phoneNumber\ custNumber\ mailList\ purchase
+comment0.target=PreferredCustomer(java.lang.String,\ java.lang.String,\ java.lang.String,\ int,\ boolean,\ double)
+comment1.params=
+comment1.target=void\ calcDiscount()
+comment2.params=purchase
+comment2.target=void\ setPurchase(double)
+comment3.params=discount
+comment3.target=void\ setDiscount(double)
+comment4.params=
+comment4.target=double\ getPurchase()
+comment5.params=
+comment5.target=double\ getDiscount()
+comment6.params=
+comment6.target=void\ calcDiscountPrice()
+comment7.params=discountPrice
+comment7.target=void\ setDiscountPrice(double)
+comment8.params=
+comment8.target=double\ getDiscountPrice()
+comment9.params=
+comment9.target=java.lang.String\ toString()
+numComments=10

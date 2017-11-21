@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Customer()
+comment1.params=name\ address\ phoneNumber\ CustomerNumber\ mailList
+comment1.target=Customer(java.lang.String,\ java.lang.String,\ java.lang.String,\ int,\ boolean)
+comment2.params=
+comment2.target=int\ getcustNumber()
+comment3.params=
+comment3.target=boolean\ getMailList()
+comment4.params=CustomerNumber
+comment4.target=void\ setcustNumber(int)
+comment5.params=mailList
+comment5.target=void\ setMailList(boolean)
+comment6.params=
+comment6.target=java.lang.String\ toString()
+numComments=7
