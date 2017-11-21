@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.params=filename
+comment0.target=int[]\ Validator(java.lang.String)
+comment0.text=\r\n\ This\ method\ will\ take\ int\ parameter\ representing\ the\ name\ of\ the\ given\ filename\ above.\ It\ will\ copy\ the\r\n\ contents\ into\ an\ array\ of\ ints.\r\n\ \r\n\ @param\ String\ filename\r\n\ @return\ int[]\r\n\ \r\n\ Assuming\ that\ there\ is\ one\ int(word)\ per\ line\ in\ the\ file\r\n
+comment1.params=number
+comment1.target=boolean\ isValid(int)
+numComments=2
