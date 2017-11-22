@@ -1,9 +1,7 @@
 import java.util.Scanner;
 import java.util.Random;
 
-//https://www.youtube.com/watch?v=JPOzWljLYuU
-
-public class JavaTutorial 
+public class RandomClassTutorial 
 {
     public static void main (String[] args)
     {
