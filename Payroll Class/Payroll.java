@@ -5,7 +5,7 @@
  * when an employee id is given.
  * 
  * 
- * @author ashik*
+ * @author ashiq*
  */
 public class Payroll {
 	private int[] employeeId = { 5658845, 4520125, 7895122, 8777541, 8451277, 1302850, 7580489 };
