@@ -1,1 +1,1 @@
-# This repository contains a mix of Java Programs I have created for recreation and coursework materials with additional features I have implemented.
+# This repository contains a mix of Java Programs I have created for recreation and some throughout my studies with additional features.
