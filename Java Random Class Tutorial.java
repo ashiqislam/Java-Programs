@@ -5,7 +5,6 @@ public class RandomClassTutorial
 {
     public static void main (String[] args)
     {
-        System.out.println("Hello World");
         int number;
         Scanner keyboard = new Scanner(System.in);
         System.out.println("Input a number: ");
