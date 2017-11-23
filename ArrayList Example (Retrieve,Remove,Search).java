@@ -1,10 +1,8 @@
 import java.util.*;
 
-public class HelloWorld {
+public class ArrayList {
 
 	public static void main(String[] args) {
-		System.out.println("Hello World");
-		
 		ArrayList<String> Names = new ArrayList<String>();
 		
 		Names.add("Rose");
