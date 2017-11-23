@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.*;
 
-public class Loops{
+public class RestartLoop{
     
     public static void main(String[] args) {
       String restart;
