@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=ListWindow()
+comment0.text=\r\n\ \ \ \ Constructor\r\n
+comment1.params=
+comment1.target=void\ buildFlowerPanel()
+comment1.text=\r\n\ \ \ \ The\ buildFlowerPanel\ method\ adds\ a\ list\ containing\r\n\ \ \ \ the\ names\ of\ the\ flowers\ to\ a\ panel.\r\n
+comment2.params=
+comment2.target=void\ buildSelectedFlowerPanel()
+comment2.text=\r\n\ \ \ \ The\ buildSelectedFlowerPanel\ method\ adds\ an\r\n\ \ \ \ uneditable\ text\ field\ to\ a\ panel.\r\n
+comment3.params=args
+comment3.target=void\ main(java.lang.String[])
+comment3.text=\r\n\ \ \ \ The\ main\ method\ creates\ an\ instance\ of\ the\r\n\ \ \ \ ListWindow\ class\ which\ causes\ it\ to\ display\r\n\ \ \ \ its\ window.\r\n
+numComments=4

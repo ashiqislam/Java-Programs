@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=
+comment0.target=ShadeDesigner()
+comment1.params=
+comment1.target=void\ buildShadesAmountPanel()
+comment2.params=
+comment2.target=void\ buildStylesPanel()
+comment3.params=
+comment3.target=void\ buildSizesPanel()
+comment4.params=
+comment4.target=void\ buildColorsPanel()
+comment5.params=
+comment5.target=void\ buildTotalPanel()
+comment6.params=args
+comment6.target=void\ main(java.lang.String[])
+numComments=7

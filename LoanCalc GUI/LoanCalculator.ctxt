@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=Rate\ NumYears\ LA
+comment0.target=LoanCalculator(double,\ int,\ double)
+comment1.params=
+comment1.target=double\ getMonthlyPayment()
+comment2.params=
+comment2.target=double\ getTotalPayment()
+comment3.params=
+comment3.target=LoanCalculator()
+comment4.params=args
+comment4.target=void\ main(java.lang.String[])
+numComments=5
