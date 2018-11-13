@@ -28,10 +28,10 @@ public class TestAESOps {
 			{ 0x46, 0xe1, 0x35, 0x13 }};
 
 		System.out.println("\nByte Substitution Step:");
-		AESOperationsSlightlyEasier.byteSubstitution(matrix);
+		AESOperations.byteSubstitution(matrix);
 
 		System.out.println("\nShift Rows Step:");
-		AESOperationsSlightlyEasier.shiftRows(matrix);
+		AESOperations.shiftRows(matrix);
 		
 		
 		/*int[][] mcTest = {
@@ -42,12 +42,12 @@ public class TestAESOps {
 		
 		
 		System.out.println("\nMixed Columns Step:");
-		AESOperationsSlightlyEasier.mixColumns(matrix);
+		AESOperations.mixColumns(matrix);
 
 		System.out.println("\nGenerate Key Step:");
 		// Assuming key[] is entered column by column
 		int[] keyTest = new int[] { 0x1a, 0x00, 0x50, 0x12, 0xbe, 0x10, 0x00, 0xc0, 0x01, 0x20, 0x40, 0x34, 0x07, 0x10, 0x00, 0x01};
-		AESOperationsSlightlyEasier.generateKeyMatrixFromKey(keyTest);
+		AESOperations.generateKeyMatrixFromKey(keyTest);
 			
 		
 		int[][] keyMatrix = {
@@ -56,7 +56,7 @@ public class TestAESOps {
 		{0x50, 0x00, 0x40, 0x00},
 		{0x12, 0xc0, 0x34, 0x01}};
 		System.out.println("\nKey Expansion Step:");
-		AESOperationsSlightlyEasier.keyExpansion(keyMatrix);
+		AESOperations.keyExpansion(keyMatrix);
 
 	}
 }
