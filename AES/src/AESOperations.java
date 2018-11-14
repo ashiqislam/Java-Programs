@@ -38,7 +38,6 @@ public class AESOperations {
 	public static void byteSubstitution(int[][] state) {
 
 		for (int row = 0; row < state.length; row++) {
-
 			for (int col = 0; col < state[row].length; col++) {
 				state[row][col] = sbox[state[row][col]];
 				System.out.printf("%02x ", state[row][col]);
@@ -174,6 +173,9 @@ public class AESOperations {
 	* @return Returns a new matrix that corresponds to the expanded key matrix of AES.
 	*/
 	public static int[][] keyExpansion(int[][] keyMatrix) {
+		// HINT: The expanded key matrix has 4 rows and 44 columns, so start by constructing a 2D array for the result that
+		// is of the correct dimensions.  Then initialize the first 4 columns with the keyMatrix.  Then iterate over the columns
+		// computing the rest per the AES key expansion rules.  Finally return the new 2D array.
 		
 		int xpMatrix[][] = new int[4][44];
 		
@@ -183,31 +185,43 @@ public class AESOperations {
 			}
 		}
 		
+		
+		int r = 0;
 		for (int row = 0; row < xpMatrix.length; row++) {
 			for (int col = 0; col < xpMatrix[0].length; col++) {
 				if(col == 4 || col == 8 || col == 12 || col == 16 || col == 20 
 					|| col == 24 || col == 28 || col == 32 || col == 36 || col == 40) {
+					if(col == 4) {
+						r = 1;
+					}
 					for(int i = 0; i < 4; i++) {
 						if (i == 0) {
-							xpMatrix[i][col] = sbox[xpMatrix[i][col-1]]; // Changes needed : C
+							xpMatrix[i][col] = sbox[xpMatrix[i+1][col-1]] ^ r ^ xpMatrix[i][col-4]; 
 						}else {
-							xpMatrix[i][col] = sbox[xpMatrix[i][col-1]]; // C
+							if(i==1) {
+								xpMatrix[i][col] = sbox[xpMatrix[2][col-1]] ^ xpMatrix[i][col-4]; 
+							}
+							if(i==2) {
+								xpMatrix[i][col] = sbox[xpMatrix[3][col-1]] ^ xpMatrix[i][col-4]; 
+							}
+							if(i==3) {
+								xpMatrix[i][col] = sbox[xpMatrix[0][col-1]] ^ xpMatrix[i][col-4];
+							}
 						}
 					}
 				}else {
 					if(col > 3) {
 						for(int j = 0; j < 4; j++) {
-							if(j == 0) {
-								xpMatrix[j][col] = sbox[xpMatrix[j][col-4]]; // C
-							}else {
-								xpMatrix[j][col] = sbox[xpMatrix[j][col-4]]; // C
-							}
-						}		
-					}	
+								xpMatrix[j][col] = xpMatrix[j][col-1] ^ xpMatrix[j][col-4]; 						
+						}
+					}
+				}
+				if (col % 4 == 0) { // if column is multiple of 4, increment r
+					r++;
 				}
 			}
 		}
-		
+
 		
 		for (int row = 0; row < xpMatrix.length; row++) {
 			for (int col = 0; col < xpMatrix[0].length; col++) {
